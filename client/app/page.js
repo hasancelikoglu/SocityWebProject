@@ -8,7 +8,7 @@ export default async function Home() {
 	const data = await getData();
 	return (
 		<div>
-			<h1>test message : {data.message}</h1>
+			<h1>test message 123 : {data.message}</h1>
 		</div>
 	);
 }
