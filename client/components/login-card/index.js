@@ -14,7 +14,7 @@ export default function LoginCard() {
 					className="p-4 shadow-inner rounded-xl outline-none w-full"
 				/>
 				<input
-					type="text"
+					type="password"
 					placeholder="Enter your password"
 					className="p-4 shadow-inner rounded-xl outline-none w-full"
 				/>
