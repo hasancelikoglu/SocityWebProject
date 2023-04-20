@@ -13,7 +13,7 @@ export default function Sprinkle() {
 				<h1 className="text-5xl font-bold text-white-full drop-shadow-xl">
 					SOCITY
 				</h1>
-				<p className="text-white-t font-light text-lg">
+				<p className="text-white-t font-light text-lg text-center px-3">
 					Communicate with your friends and all the people in the world.
 				</p>
 			</div>
