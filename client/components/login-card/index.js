@@ -3,7 +3,7 @@ import { IoArrowForward } from "react-icons/io5";
 
 export default function LoginCard() {
 	return (
-		<div className="w-1/3 h-3/5 flex flex-col items-center justify-between py-10 px-16">
+		<div className="w-[500px] h-3/5 flex flex-col items-center justify-between px-5 m-5">
 			<h1 className="text-center text-white-full text-2xl font-light">
 				Login to app
 			</h1>
