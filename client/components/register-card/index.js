@@ -8,11 +8,23 @@ import SecondStage from "./second-stage";
 
 export default function RegisterCard() {
 	const [stage, setStage] = useState(1);
+	const [firstStage, setFirstStage] = useState({
+		email: "",
+		password: "",
+		passwordAgain: "",
+	});
+	const [secondStage, setSecondStage] = useState({
+		username: "",
+	});
 	const submitHandle = (e) => {
 		if (stage === 2) {
 			alert("kayıt başarılı");
 		} else {
-			setStage(2);
+			if (firstStage.password !== firstStage.passwordAgain) {
+				alert("Şifreler uyuşmuyor");
+			} else {
+				setStage(2);
+			}
 		}
 		e.preventDefault();
 	};
@@ -38,7 +50,14 @@ export default function RegisterCard() {
 					onSubmit={submitHandle}
 					className="flex flex-col w-full items-center gap-y-5"
 				>
-					{stage === 1 ? <FirstStage /> : <SecondStage />}
+					{stage === 1 ? (
+						<FirstStage firstStage={firstStage} setFirstStage={setFirstStage} />
+					) : (
+						<SecondStage
+							secondStage={secondStage}
+							setSecondStage={setSecondStage}
+						/>
+					)}
 					<button
 						type="submit"
 						className="text-dark bg-white-full p-3 rounded-xl"
