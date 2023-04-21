@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Sprinkle() {
 	return (
-		<div className="w-2/3 h-screen relative">
+		<div className="w-full h-screen relative hidden md:block">
 			<Image
 				src="/sprinkle.svg"
 				fill
@@ -13,7 +13,7 @@ export default function Sprinkle() {
 				<h1 className="text-5xl font-bold text-white-full drop-shadow-xl">
 					SOCITY
 				</h1>
-				<p className="text-white-t font-light text-lg">
+				<p className="text-white-t font-light text-lg text-center px-3">
 					Communicate with your friends and all the people in the world.
 				</p>
 			</div>
